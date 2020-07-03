@@ -9,13 +9,6 @@ string kernal_version = "1.0.0";
 string command_input;
 string null = "";
 
-void command_operator() {
-
-    getline(cin, command_input);
-    command_parser(command_input);
-
-}
-
 void command_parser(string x) {
 
     if(x == "help" ) {
@@ -23,8 +16,17 @@ void command_parser(string x) {
         cout << "========= help =========" << endl;
 
     }
+}
+
+
+void command_operator() {
+
+    getline(cin, command_input);
+    command_parser(command_input);
 
 }
+
+
 
 int main() {
 
